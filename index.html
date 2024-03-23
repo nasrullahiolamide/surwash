@@ -99,43 +99,43 @@
     <div class="container">
       <h4 class="mb-4">Participating States Under the Program </h4>
       <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-md-2">
           <div class="organization-box">
-            <img src="images/Ekiti.jpeg" alt="Ekiti State Logo">
+            <img src="images/Ekiti.jpeg" alt="Ekiti State Logo" class="organization-logo">
             <div class="overlay">
               <h4>Ekiti</h4>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-md-2">
           <div class="organization-box">
-            <img src="images/imo.jpeg" alt="Imo State Logo">
+            <img src="images/imo.jpeg" alt="Imo State Logo" class="organization-logo">
             <div class="overlay">
               <h4>Imo</h4>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-md-2">
             <div class="organization-box">
-              <img src="images/delta.jpeg" alt="Delta State Logo">
+              <img src="images/delta.jpeg" alt="Delta State Logo" class="organization-logo">
               <div class="overlay">
                 <h4>Delta</h4>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-md-2">
             <div class="organization-box">
-              <img src="images/kaduna.jpeg" alt="Kaduna State Logo">
+              <img src="images/kaduna.jpeg" alt="Kaduna State Logo" class="organization-logo">
               <div class="overlay">
                 <h4>Kaduna</h4>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-md-2">
             <div class="organization-box">
               <img src="images/plateau.png" alt="Plateau State Logo">
               <div class="overlay">
@@ -144,18 +144,18 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-md-2">
             <div class="organization-box">
-              <img src="images/gombe.jpeg" alt="Gombe State Logo">
+              <img src="images/gombe.jpeg" alt="Gombe State Logo" class="organization-logo">
               <div class="overlay">
                 <h4>Gombe</h4>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-md-2">
             <div class="organization-box">
-              <img src="images/katsina.jpeg" alt="Katsina State Logo">
+              <img src="images/katsina.jpeg" alt="Katsina State Logo" class="organization-logo">
               <div class="overlay">
                 <h4>Katsina</h4>
               </div>
@@ -183,34 +183,34 @@
 
         <div class="col-md-3 center_t">
           <div class="counter">
-            <span class="count" id="count2">0</span><span class="count">00000</span>
+            <span class="count" id="count2">0</span>
             <p>people provided with basic drinking water services</p>
           </div>
         </div>
         <div class="col-md-3 center_t">
           <div class="counter">
-            <span class="count" id="count3">0</span><span class="count">300</span>
+            <span class="count" id="count3">0</span>
             <p>women provided with basic drinking water services</p>
           </div>
         </div>
 
         <div class="col-md-3 center_t">
             <div class="counter">
-              <span class="count" id="count4">0</span><span class="count">667</span>
+              <span class="count" id="count4">0</span>
               <p>people provided with drinking water in urban and rural area</p>
             </div>
           </div>
 
           <div class="col-md-3 center_t">
             <div class="counter">
-              <span class="count" id="count5">0</span><span class="count">000</span>
+              <span class="count" id="count5">0</span>
               <p>people provided with access to improved sanitation services</p>
             </div>
           </div>
 
           <div class="col-md-3 center_t">
             <div class="counter">
-              <span class="count" id="count6">0</span><span class="count">00</span>
+              <span class="count" id="count6">0</span>
               <p>women provided with access to improved sanitation services</p>
             </div>
           </div>
@@ -267,30 +267,31 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     // Function to animate counting effect
-    function animateValue(id, start, end, duration) {
-      var range = end - start;
-      var current = start;
-      var increment = end > start ? 1 : -1;
-      var stepTime = Math.abs(Math.floor(duration / range));
-      var obj = document.getElementById(id);
-      var timer = setInterval(function() {
-        current += increment;
-        obj.textContent = current;
-        if (current == end) {
-          clearInterval(timer);
+    function animateValue(id, start, end, duration, increment) {
+    var current = start;
+    var obj = document.getElementById(id);
+    var timer = setInterval(function() {
+      obj.textContent = current.toLocaleString(); // Format number with commas
+      if (current == end) {
+        clearInterval(timer);
+      } else {
+        current += increment; // Increment by the specified value
+        if (Math.abs(current - end) < Math.abs(increment)) { // Ensure not to overshoot the target
+          current = end;
         }
-      }, stepTime);
-    }
+      }
+    }, duration);
+  }
   
     // Call animateValue function for each target
-    animateValue("count1", 0, 7, 5000); // Example values
-    animateValue("count2", 0, 61, 5000);  // Example values
-    animateValue("count3", 0, 3007, 4000); // Example values
-    animateValue("count4", 0, 1626, 5000); // Example values
-    animateValue("count5", 0, 1400, 5000); // Example values
-    animateValue("count6", 0, 6902, 3000); // Example values
-    animateValue("count7", 0, 2000, 500); // Example values
-    animateValue("count8", 0, 500, 1000); // Example values
+    animateValue("count1", 0, 7, 1000, 1); // Example values
+    animateValue("count2", 0, 6100000, 300, 203050);  // Example values
+    animateValue("count3", 0, 3007300, 200, 80729); // Example values
+    animateValue("count4", 0, 162667, 300, 7285); // Example values
+    animateValue("count5", 0, 1400000, 200, 50293); // Example values
+    animateValue("count6", 0, 690200, 200, 17859); // Example values
+    animateValue("count7", 0, 2000, 1000, 500); // Example values
+    animateValue("count8", 0, 500, 800, 50); // Example values
   </script>
   </script>
 </body>
