@@ -18,8 +18,19 @@ overflow: hidden;
 text-align: center; /* Center-align the content inside the box */
 }
 
+.organization-box {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  margin: 10px; /* Adjust the margin as needed */
+  text-align: center; /* Center the content */
+  display: inline-block; /* Display boxes inline */
+}
+
+.organization-logo {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
 .organization-box img {
-max-width: 50%; /* Adjust the size of the logo */
 height: auto;
 margin: 0 auto; /* Center the logo horizontally */
 display: block; /* Ensure the image is centered properly */
@@ -87,3 +98,5 @@ text-align: center;
     color: #fff;
     text-decoration: none;
   }
+
+  
