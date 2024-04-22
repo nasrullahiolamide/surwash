@@ -14,7 +14,10 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand brand-name" href="#">SURWASH</a>
+    <a class="navbar-brand brand-name" href="#" style="vertical-align: middle;">
+      <img src="images/surwash_logo.jpg" alt="Brand Logo" height="45" weight="40" class="d-inline-block align-top mr-2">
+      <span style="margin: auto; vertical-align: middle; color: #063431;">SURWASH</span>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,17 +26,27 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://www.surwash.projectdemo.com.ng" target="_blank">DMS</a>
+        </li>
         <li class="nav-item dashboard">
-          <a class="nav-link" href="#dashboard" style="color: #ffffff;">Dashboard</a>
+          <a class="nav-link" href="Dashboard.html" style="color: #ffffff;">Dashboard</a>
         </li>
       </ul>
     </div>
   </nav>
 
 <!-- Dashboard content goes here -->
-  
-<div class="container">
-  <iframe title="DLI" width="100%" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiZGYzMjJiMTItMjBjMy00MTFjLTk1NTEtNWY1MWRmZDA5NWMxIiwidCI6Ijg0YzMxY2EwLWFjM2ItNGVhZS1hZDExLTUxOWQ4MDIzM2U2ZiIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+<div class="container" id="pleaseWait" style="display: none;">
+  <div class="mt-5">
+    <strong>
+      <p style="color: #063431;">Please wait a few seconds for the data to be populated...</p>
+    </strong>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <iframe title="DLI" width="100%" height="1500" src="https://app.powerbi.com/view?r=eyJrIjoiM2MyZDk1NmQtMDNlNi00ODgxLWE0ZjAtMDczMDYxNjE5NGIwIiwidCI6Ijg0YzMxY2EwLWFjM2ItNGVhZS1hZDExLTUxOWQ4MDIzM2U2ZiIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 </div>
 
 
@@ -66,6 +79,18 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Show the "Please wait" message
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('pleaseWait').style.display = 'block';
+
+      // Hide the message after 10 seconds
+      setTimeout(function() {
+        document.getElementById('pleaseWait').style.display = 'none';
+      }, 15000); // 10 seconds (10000 milliseconds)
+    });
+  </script>
   
 </body>
 </html>
