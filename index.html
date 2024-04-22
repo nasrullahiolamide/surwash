@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="surwash icon" href="images/surwash_logo.jpg" type="image/x-icon" >
   <title>SURWASH</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -15,7 +16,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand brand-name" href="#" style="vertical-align: middle;">
-      <img src="images/surwash_logo.jpg" alt="Brand Logo" height="45" weight="40" class="d-inline-block align-top mr-2">
+      <img src="images/surwash_logo.jpg" alt="SURWASH Logo" height="45" weight="40" class="d-inline-block align-top mr-2">
       <span style="margin: auto; vertical-align: middle; color: #063431;">SURWASH</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,6 +27,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://www.surwash.projectdemo.com.ng/dms" target="_blank">DMS</a>
+        </li>
         <li class="nav-item dashboard">
           <a class="nav-link" href="Dashboard.html" style="color: #ffffff;">Dashboard</a>
         </li>
@@ -34,43 +38,41 @@
   </nav>
 
   <!-- Carousel -->
-<!-- Carousel -->
-<div id="home" class="carousel slide" data-ride="carousel">
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="overlay"></div>
-            <img src="images/handwash.jpg" class="d-block w-100 h-100" alt="First slide">
-            <div class="carousel-caption d-md-block">
-                <h4>First Slide Heading</h4>
-                <p>This is a description for the first slide.</p>
-            </div>
-        </div>
-      <div class="carousel-item">
+      <div class="carousel-item active">
         <div class="overlay"></div>
-        <img src="images/handwash.jpg" class="d-block w-100 h-100" alt="Second slide">
+        <img src="images/Surwash officials.jpg" class="d-block w-100" alt="First slide">
         <div class="carousel-caption d-md-block">
-          <h5>Second Slide Heading</h5>
-          <p>This is a description for the second slide.</p>
-        </div>
+          <!-- <h4>First Slide Heading</h4>
+          <p>This is a description for the first slide.</p> -->
+      </div>
       </div>
       <div class="carousel-item">
-        <div class="overlay"></div>
-        <img src="images/handwash.jpg" class="d-block w-100 h-100" alt="Third slide">
+         <div class="overlay"></div>
+        <img src="images/surwash_all_offical.jpg" class="d-block w-100" alt="Second slide">
         <div class="carousel-caption d-md-block">
-          <h5>Third Slide Heading</h5>
-          <p>This is a description for the third slide.</p>
-        </div>
+          <!-- <h4>First Slide Heading</h4>
+          <p>This is a description for the first slide.</p> -->
+      </div>
+      </div>
+      <div class="carousel-item">
+         <div class="overlay"></div>
+        <img src="images/toilet image.jpeg" class="d-block w-100" alt="Third slide">
+        <div class="carousel-caption d-md-block">
+          <!-- <h4>First Slide Heading</h4>
+          <p>This is a description for the first slide.</p> -->
+      </div>
       </div>
     </div>
-
-    <a class="carousel-control-prev" href="#home" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#home" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
   
   <!-- About Us -->
@@ -102,11 +104,30 @@
     <div class="container">
       <h4 class="mb-4">Participating States Under the Program </h4>
       <div class="row">
+        <div class="col-md-1 col-sm-4 text-center smalldevice">
+          <div class="organization-box">
+            <img src="images/delta.png" alt="Delta State Logo" class="organization-logo">
+            <div class="overlay">
+              <h4>Delta</h4>
+            </div>
+          </div>
+        </div>
+
+
         <div class="col-md-2 col-sm-4 text-center smalldevice">
           <div class="organization-box">
             <img src="images/Ekiti.jpeg" alt="Ekiti State Logo" class="organization-logo">
             <div class="overlay">
               <h4>Ekiti</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-1 col-sm-4 text-center smalldevice">
+          <div class="organization-box">
+            <img src="images/gombe.jpeg" alt="Gombe State Logo" class="organization-logo">
+            <div class="overlay">
+              <h4>Gombe</h4>
             </div>
           </div>
         </div>
@@ -120,20 +141,23 @@
           </div>
         </div>
 
-        <div class="col-md-1 col-sm-4 text-center smalldevice">
-            <div class="organization-box">
-              <img src="images/delta.jpeg" alt="Delta State Logo" class="organization-logo">
-              <div class="overlay">
-                <h4>Delta</h4>
-              </div>
-            </div>
-          </div>
+        
 
           <div class="col-md-2 col-sm-4 text-center smalldevice">
             <div class="organization-box">
               <img src="images/kaduna.jpeg" alt="Kaduna State Logo" class="organization-logo">
               <div class="overlay">
                 <h4>Kaduna</h4>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-md-2 col-sm-4 text-center smalldevice">
+            <div class="organization-box">
+              <img src="images/katsina.jpeg" alt="Katsina State Logo" class="organization-logo">
+              <div class="overlay">
+                <h4>Katsina</h4>
               </div>
             </div>
           </div>
@@ -147,23 +171,6 @@
             </div>
           </div>
 
-          <div class="col-md-1 col-sm-4 text-center smalldevice">
-            <div class="organization-box">
-              <img src="images/gombe.jpeg" alt="Gombe State Logo" class="organization-logo">
-              <div class="overlay">
-                <h4>Gombe</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-4 text-center smalldevice">
-            <div class="organization-box">
-              <img src="images/katsina.jpeg" alt="Katsina State Logo" class="organization-logo">
-              <div class="overlay">
-                <h4>Katsina</h4>
-              </div>
-            </div>
-          </div>
         <!-- Repeat the above code block for the remaining organizations -->
       </div>
     </div>
@@ -190,19 +197,7 @@
             <p>people provided with basic drinking water services</p>
           </div>
         </div>
-        <div class="col-md-3 center_t">
-          <div class="counter">
-            <span class="count" id="count3">0</span>
-            <p>women provided with basic drinking water services</p>
-          </div>
-        </div>
 
-        <div class="col-md-3 center_t">
-            <div class="counter">
-              <span class="count" id="count4">0</span>
-              <p>people provided with drinking water in urban and rural area</p>
-            </div>
-          </div>
 
           <div class="col-md-3 center_t">
             <div class="counter">
@@ -211,12 +206,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 center_t">
-            <div class="counter">
-              <span class="count" id="count6">0</span>
-              <p>women provided with access to improved sanitation services</p>
-            </div>
-          </div>
+
 
           <div class="col-md-3 center_t">
             <div class="counter">
