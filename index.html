@@ -182,7 +182,6 @@
 <section id="targets" class="py-5">
     <div class="container">
       <h2 class="center_t">Our Targets</h2>
-
       <div class="row">
         <div class="col-md-3 center_t">
           <div class="counter">
@@ -192,26 +191,65 @@
         </div>
 
         <div class="col-md-3 center_t">
-          <div class="counter">
-            <span class="count" id="count2">0</span>
-            <p>people provided with basic drinking water services</p>
+          <div class="counter" data-toggle="collapse" data-target="#details2" aria-expanded="false" aria-controls="details2">
+              <span class="count" id="count2">0</span>
+              <p>people provided with basic drinking water services</p>
+              <i class="fas fa-chevron-down"></i> <!-- Arrow icon -->
           </div>
+          <!-- detail of drinking water service -->
+          <div class="collapse target_explain" id="details2">
+              <table class="target_detail">
+                  <tr>
+                      <td style="padding-right: 10px;">
+                          <i class="fa-solid fa-person-dress fa-2x icon"></i><i class="fa-solid fa-person-dress fa-2x icon"></i><i class="fa-solid fa-person-dress fa-2x icon"></i>
+                      </td>
+                      <td>
+                          <p> <strong>3,007,300 women </strong> provided with basic drinking water services</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td style="padding-right: 10px;">
+                          <i class="fa-solid fa-city fa-2x icon"></i> <i class="fa-solid fa-house fa-2x icon"></i>
+                      </td>
+                      <td>
+                          <p> <strong>1,626,667 people </strong>  provided with drinking in <strong> urban and small towns </strong> in the participating States</p>
+                      </td> 
+                  </tr>
+              </table>
+          </div>
+      </div>
+      
+
+
+      <div class="col-md-3 center_t">
+        <div class="counter" data-toggle="collapse" data-target="#details5" aria-expanded="false" aria-controls="details5">
+            <span class="count" id="count5">0</span>
+            <p>people provided with access to improved sanitation services</p>
+            <i class="fas fa-chevron-down"></i> <!-- Arrow icon -->
         </div>
-
-
-          <div class="col-md-3 center_t">
-            <div class="counter">
-              <span class="count" id="count5">0</span>
-              <p>people provided with access to improved sanitation services</p>
-            </div>
-          </div>
+        <!-- detail of sanitation service -->
+        <div class="collapse target_explain" id="details5">
+            <table class="target_detail">
+                <tr>
+                    <td style="padding-right: 10px;">
+                        <i class="fa-solid fa-person-dress fa-2x icon"></i><i class="fa-solid fa-person-dress fa-2x icon"></i><i class="fa-solid fa-person-dress fa-2x icon"></i>
+                    </td>
+                    <td>
+                        <p><strong>690,200 women </strong> provided with access to improved sanitation services</p>
+                    </td>
+                </tr>
+    
+            </table>
+        </div>
+    </div>
+      
 
 
 
           <div class="col-md-3 center_t">
             <div class="counter">
               <span class="count" id="count7">0</span>
-              <p>Schools aand healthcare facilities with improved water supply, sanitation and handwashing facilities </p>
+              <p>Schools and healthcare facilities with improved water supply, sanitation and handwashing facilities </p>
             </div>
           </div>
 
@@ -221,10 +259,90 @@
               <p>Communities having achieved and/or maintained community wide-wide sanitation status</p>
             </div>
           </div>
-
-
-
       </div>
+      <hr>
+
+
+      <!-- collapsible area of the RA -->
+      <div class="collapsible">
+        <button class="collapsible-btn">
+        <h5 style="display: inline;">
+          Result Areas and Corresponding Disbursement
+          Linked Indicators 
+        </h5><i class="fas fa-chevron-down"></i></button>
+        
+        <div class="content">
+          <table class="roll_down">
+            <thead>
+                <th colspan="2">
+                    <div>RA 1: Strengthened Sector Policies and institutions for improvement services</div>
+                </th>
+            </thead>
+            <tr>
+                <td>DL1</td>
+                <td>Design of National WASH Fund to enable its establishment</td>
+            </tr>
+  
+            <tr>
+                <td>DL2</td>
+                <td>Design, adoption and implementation of State PIR Plans and achievement of annual targets</td>
+            </tr>
+            
+            <th colspan="2">
+                <div>RA 2: Improved Access to water supply, Sanitation and Hygiene Services</div>
+            </th>
+  
+            <tr>
+                <td>DL3</td>
+                <td>People provided with basic drinking water service under the program</td>
+            </tr>
+  
+            <tr>
+                <td></td>
+                <td><span><i>Sub-DLI 3.1:</i></span> <i>Performance imrpovement of
+                     state water supply implementing agencies</i></td>
+            </tr>
+  
+            <tr>
+                <td>DL4</td>
+                <td>People with access to sustainably functioning water service</td>
+            </tr>
+  
+            <tr>
+                <td>DL5</td>
+                <td>Households with improved sanitation facilities constructed or rehebilitated under the program</td>
+            </tr>
+  
+            <tr>
+                <td></td>
+                <td><span><i>Sub-DLI 5.1:</i></span> <i>Performance imrpovement of
+                     state sanitation implementing agencies</i></td>
+            </tr>
+  
+            <tr>
+                <td>DL6</td>
+                <td>Communities having achieved community-wide sanitation status(ODF+) or mumber of ODF+ communities</td>
+            </tr>
+  
+            <tr>
+                <td>DL7</td>
+                <td>Schools and healthcare facilities with functional, improved water supply, sanitation and 
+                    handwashing facilities.
+                </td>
+            </tr>
+        </table>
+        </div>
+      </div>
+      <!-- collapsible ends here /div before -->
+        
+        
+    </div>
+
+    
+    
+    
+
+
     </div>
   </section>
   
@@ -247,11 +365,20 @@
   
 
   <!-- Footer -->
-  <footer class="py-3" style= "text-align: left; color: #063431;">
+
+  <footer class="py-3" style="text-align: left; color: #063431;">
     <div class="container">
-      <p>&copy; 2024 SURWASH</p>
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2024 SURWASH</p>
+        </div>
+        <div class="col-md-6" style="text-align: right;">
+           <strong> <p>Proudly sponsored by <img src="images/world bank.png" alt="World Bank Logo" style="height: 30px; vertical-align: middle;"> World Bank</p> </strong>
+        </div>
+      </div>
     </div>
   </footer>
+  
 
   <!-- Bootstrap JS and dependencies -->
  
@@ -285,7 +412,25 @@
     animateValue("count6", 0, 690200, 200, 17859); // Example values
     animateValue("count7", 0, 2000, 1000, 500); // Example values
     animateValue("count8", 0, 500, 800, 50); // Example values
-  </script>
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+  var coll = document.getElementsByClassName('collapsible-btn');
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      var content = this.nextElementSibling;
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    });
+  }
+});
+
   </script>
 </body>
 </html>

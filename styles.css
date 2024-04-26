@@ -6,8 +6,7 @@ font-weight: bold;
 }
 
 .dashboard {
-    background-color: 
-#063431;
+    background-color: #063431;
     color: white;
     border-radius: 5px;
 }
@@ -132,3 +131,72 @@ text-align: center;
       font-size: 0.5rem;
     } */
   }
+
+  table {
+    width: 100%;
+  }
+
+  th:first-child,
+  td:first-child {
+    width: 100px; /* Set the width for the first column */
+  }
+
+  table.roll_down th, table.roll_down td {
+    border: 1px solid black; /* Add a border to each table header and data cell */
+    padding: 5px; /* Optional: Add padding to the cells for better spacing */
+  }
+
+
+  .collapsible {
+    margin-bottom: 20px;
+  }
+  
+  .collapsible-btn {
+    background-color:#fff;
+    color: #333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .content {
+    display: none; /* Initially hide the content */
+    padding: 10px;
+    background-color: #e1f1e1;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  /* Rotate arrow icon when section is expanded */
+  .collapsible-btn.active i {
+    transform: rotate(180deg);
+  }
+  
+
+  /* Icons in collabsible */
+  .icon{
+    color: #063431;
+}
+
+
+
+table.target_detail td {
+  padding: 5px; /* Optional: Add padding to the cells for better spacing */
+  font-size: 13px;
+}
+
+table.target_detail td:nth-child(2){
+  text-align: left;
+}
+
+div#details2 tr:first-child{
+  border-bottom: 1px solid black; /* Add a border to each table header and data cell */
+}
+
+
+
+div.target_explain{
+  background-color: #e1f1e1;
+}
