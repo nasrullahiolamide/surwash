@@ -9,11 +9,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./images/favicon-16x16.png" type="image/png">
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand brand-name" href="#" style="vertical-align: middle;">
       <img src="images/surwash_logo.jpg" alt="SURWASH Logo" height="45" weight="40" class="d-inline-block align-top mr-2">
       <span style="margin: auto; vertical-align: middle; color: #063431;">SURWASH</span>
@@ -27,14 +29,59 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="https://www.surwash.projectdemo.com.ng" target="_blank">DMS</a>
+          <a class="nav-link" href="https://dms.surwash.ng" target="_blank">DMS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Resources
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownTools">
+            <!-- Add dropdown items here -->
+            <a class="dropdown-item tool_doc" href="tools/SURWASH POM-12.01.22..pdf" target="_blank">POM</a>
+            <a class="dropdown-item tool_doc" href="tools/Final SURWASH POM Appendices-12.01.22.pdf" target="_blank">POM Appendices</a>
+            <a class="dropdown-item tool_doc" href="tools/SURWASH Final PAD.pdf" target="_blank">PAD</a>
+            <a class="dropdown-item tool_doc" href="tools/SURWASH Manual.pdf" target="_blank">Dashboard User Manual</a>
+            <a class="dropdown-item tool_doc" href="tools/app-release.apk" target="_blank" download>SURWASH Application</a>
+            <!-- <a class="dropdown-item tool_doc" href="onboard.html" target="_blank">Onboard new state</a> -->
+  
+            <div class="dropdown-submenu">
+              <a
+                class="dropdown-item dropdown-toggle tool_doc"
+                href="#"
+                id="navbarDropdownOnboard"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Onboard new state
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownOnboard">
+                <a class="dropdown-item tool_doc" href="tools/2.Official-Documents-Financing-Agreement-for-Credit-6882-NG.pdf" target="_blank">
+                  Financial Agreement
+                </a>
+                <a
+                  class="dropdown-item tool_doc" href="tools/Draft Eligibility+Readiness Criteria_Revised _MTR_WB.pdf" target="_blank" >
+                  Criteria for Eligibility <br /> and Readiness
+                </a>
+                <a class="dropdown-item tool_doc" href="onboard.html" target="_blank" >
+                  Onboarding Presentation
+                </a>
+              </div>
+            </div>
+            
+        </li>
+  
+        <li class="nav-item active">
+          <a class="nav-link" href="#" onclick="alert('Coming soon')">Score Card</a>
         </li>
         <li class="nav-item dashboard">
-          <a class="nav-link" href="Dashboard.html" style="color: #ffffff;">Dashboard</a>
+          <a class="nav-link" href="https://portal.surwash.ng/dashboard" style="color: #ffffff;">Dashboard</a>
         </li>
       </ul>
     </div>
   </nav>
+
 
   <!-- Carousel -->
   <div id="carouselExample" class="carousel slide" data-ride="carousel">
@@ -132,5 +179,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
